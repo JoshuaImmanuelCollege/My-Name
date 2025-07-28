@@ -15,3 +15,10 @@
     - npm install
     - 'npm run build '
     shell: BASH
+  - action: npm run test
+    type: BUILD
+    docker_image_name: library/node
+    docker_image_tag: 22
+    execute_commands:
+    - npm run test
+    shell: BASH
